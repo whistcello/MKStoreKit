@@ -149,6 +149,7 @@ extern NSString *const kMKStoreKitSubscriptionExpiredNotification;
  *  -availableProducts
  */
 - (void)startProductRequest;
+- (void)startProductRequestWithComletion:(void (^)(BOOL success, NSArray *products))completion;
 
 /*!
  *  @abstract Restores In App Purchases made on other devices
